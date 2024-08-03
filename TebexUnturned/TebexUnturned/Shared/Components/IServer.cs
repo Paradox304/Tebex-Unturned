@@ -1,10 +1,9 @@
-namespace Tebex.Shared.Components
+namespace TebexUnturned.Shared.Components;
+
+public interface IServer
 {
-    public interface IServer
-    {
-        string Command(string value);
-        string Address { get; }
-        string Version { get; }
-        string Protocol { get; }
-    }
+    string Address { get; }
+    string Version { get; }
+    string Protocol { get; }
+    string Command(string value);
 }
